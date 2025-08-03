@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant multicolor (&:where(.multicolor, .multicolor *));
+
+/* @import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+@import "tailwindcss/components"; */
+
+
+body {
+  font-family: var(--font, sans-serif);
+}
+
+.light {
+  --font: sans-serif;
+}
+
+.dark {
+  --font: monospace;
+}
+
+.multicolor {
+  --font: serif;
+}
+
+
+
+
+
